@@ -1,0 +1,8 @@
+{
+  "name": "pitu",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/gordolucas88/semana-fullstack",
+  "author": "Lucas Rodrigues <lucasrodrigues062@gmail.com>",
+  "license": "MIT"
+}
