@@ -5,6 +5,6 @@ database.sync();
 console.log('Conexao com o banco realizada com sucesso!')
 
 
-app.listen(3000);
+app.listen(3001);
 
 console.log('Server Executando na porta 3000')
