@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Header from '../../components/Header'
 import { ContentContainer, Form , AdsBlock} from './styles'
 import ShortenerService from '../../services/shortenerService'
+import vars from '../../configs/vars'
 
 class Homepage extends React.Component {
   constructor(props) {
@@ -70,7 +71,7 @@ class Homepage extends React.Component {
                     <InputGroup className="mb-3">
 
                       <FormControl autoFocus={ true }
-                        defaultValue={`https://pitu.tk/${code}`}
+                        defaultValue={vars.HOST_APP + code}
                         ref={(input) => this.inputURL = input}>
 
                       </FormControl>
@@ -78,7 +79,7 @@ class Homepage extends React.Component {
                         <Button variant="outline-secondary" onClick={() => this.copyToClipboard()}>Copiar</Button>
                       </InputGroup.Append>
                     </InputGroup>
-                     <p>Para acompanhar as estatisticas, acesse https://pitu.tk/{code}</p>
+                <p>Para acompanhar as estatisticas, acesse {vars.HOST_APP + code}</p>
 
                   </>
                 )
